@@ -14,7 +14,7 @@ type Response struct {
 
 func Handler(request Request) (Response, error) {
 	return Response{
-		Message: "Hello, " + request.Name,
+		Message: "Hello, " + request.Name + ". this is lambda function written in Go.",
 	}, nil
 }
 
